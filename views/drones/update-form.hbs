@@ -1,6 +1,28 @@
-<h2>Update the drone</h2>
+<div class="card">
+  <div class="card-header">
+   <h3><strong> Actualiza tu Drone </strong></h3>  
+  </div>
 
-<form action="/drones/{{drone._id}}/edit" method="post">
+  <form action="/drones/{{drone._id}}/edit" method="post">
+
+        <div class="input-group mb-3">
+            <span for="name" class="input-group-text" id="inputGroup-sizing-default">Nombre: </span>
+            <input type="text" name="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{drone.name}}">
+        </div>
+        <div class="input-group mb-3">
+            <span for="propellers" class="input-group-text" id="inputGroup-sizing-default">Propulsor: </span>
+            <input type="text" name="propellers" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{drone.propellers}}">
+        </div>
+        <div class="input-group mb-3">
+            <span for="maxSpeed" class="input-group-text" id="inputGroup-sizing-default">Velocidad Máxima: </span>
+            <input type="text" name="maxSpeed" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  value="{{drone.maxSpeed}}">
+        </div>
+
+        <button class="btn btn-outline-success">Actualizar</button>
+
+</form>
+
+{{!-- <form action="/drones/{{drone._id}}/edit" method="post">
 
     <label for="name">Nombre: </label>
     <input type="text" name="name" value="{{drone.name}}">
@@ -16,4 +38,7 @@
 
     <button>Actualizar</button>
 
-</form>
+</form> --}}
+
+</div>
+

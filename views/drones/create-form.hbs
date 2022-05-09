@@ -1,5 +1,31 @@
-<h2>Crea tu nuevo drone</h2>
+<div class="card">
+  <div class="card-header">
+   <h3><strong> Crea tu propio drone </strong></h3>  
+  </div>
 
+
+<form action="/drones/create" method="post">
+
+        <div class="input-group mb-3">
+            <span for="name" class="input-group-text" id="inputGroup-sizing-default">Nombre: </span>
+            <input type="text" name="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <span for="propellers" class="input-group-text" id="inputGroup-sizing-default">Propulsor: </span>
+            <input type="text" name="propellers" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <span for="maxSpeed" class="input-group-text" id="inputGroup-sizing-default">Velocidad Máxima: </span>
+            <input type="text" name="maxSpeed" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <button class="btn btn-outline-success">Añadir</button>
+
+</form>
+
+</div>
+
+{{!-- 
 <form action="/drones/create" method="post">
 
     <label for="name">Nombre: </label>
@@ -16,4 +42,4 @@
 
     <button>Añadir</button>
 
-</form>
+</form> --}}

@@ -6,19 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{title}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
 
   <body>
-    <a href="/">Home</a>
-    <a href="/drones">Drones</a>
-    <a href="/drones/create">Crea el tuyo</a>
+    {{!-- <nav>
+      <a href="/">Home</a>
+      <a href="/drones">Drones</a>
+      <a href="/drones/create">Crea el tuyo</a>
     {{!-- <a href="/drones/{{drone._id}}/edit">Actualiza tu drone</a> --}}
+    {{!-- </nav> --}}
 
+ <ul class="nav justify-content-center">
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="/drones">Drones</a>
+    </li>
+     <li class="nav-item">
+    <a class="nav-link" href="/drones/create">Crea el tuyo</a>
+    </li>
+</ul>
 
-    {{{body}}}
+<div class="d-flex flex-column align-items-center" >
+
+{{{body}}}
+
+</div>
+    
 
     <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 
 </html>
